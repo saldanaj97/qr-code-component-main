@@ -5,6 +5,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 p {
@@ -27,8 +28,7 @@ img {
 .qr-code-component-container {
   background-color: white;
   border-radius: 10px;
-  width: 20%;
-  min-height: 100vh;
+  max-width: 375px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,16 +37,4 @@ img {
 .description-container {
   margin: 5px 25px 15px 25px;
   text-align: center;
-}
-
-@media (max-width: 1440px) {
-  .qr-code-component-container {
-    max-width: 1440px;
-  }
-}
-
-@media (max-width: 375px) {
-  .qr-code-component-container {
-    max-width: 375px;
-  }
 }
